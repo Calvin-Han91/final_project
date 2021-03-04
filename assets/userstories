@@ -1,0 +1,35 @@
+[User 1] Whiskey enthusiast buyer looking for something specific to buy (whiskey, brand, shop) 
+
+As a whiskey buyer...
+
+1) Register 
+- I want to be able to create an account for me so that I can have access to previous purchases of mine  
+
+2) Browse  
+- I want to be able to search for a particular rare whiskey that I’m interested it so that I can connect with a seller that offers this product 
+- I want to be see all the whiskies that I browsed available for purchase
+- I want to see information about the whiskey that I chose so that I can verify if this really the product that I want. 
+- I want to be able to browse a particular whiskey store that I familiar with so that I can search for my favorite whisky there  
+
+3) Exchange information 
+- I want to be able to ask questions to the seller about the product that I want so that I can be confident that the whisky that I’m buying is the perfect one for me
+
+4) Place Orders
+- I want to be able to place an order from the seller's storefront
+- As a whiskey enthusiast I want to be able to view my purchase history because I want to confirm my purchase was successfully executed.
+
+[User 2] Whiskey seller wanting to sell the rare whiskey they currently have in their possession  
+
+As a whiskey seller...
+
+1) Register 
+- I want to be able to register with the site so I may establish a store and sell my products to whisky lovers around the world! 
+
+2) Create a whisky shop page 
+- I want to be able to create a storefront to market the whiskey I want to sell.  
+
+3) Manage my store inventory 
+- I want to be able to add/get rid of a whiskey/spirit to my store inventory 
+
+4) Orders management 
+- I want to check all the orders that were purchased at my store so that I can ship my product
