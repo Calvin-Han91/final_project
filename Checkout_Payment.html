@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+</head>
+   
+<body>
+    <h1 class="my-8"> 
+        <div class="flex ">
+            <div class= "Text-centered ">    
+                <div class="mb-8 block text-xl"> Payment Method</div>
+
+                <div class="block m-4"> 
+                    <input type=text placeholder="Credit Card Number" class=" block p-2 w-64 mb-6 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="ccNumber" name="ccNumber">
+                    <input type=text placeholder="Name on Card"class="p-2 w-40 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="nameOnCc" name="nameOnCc">
+                    <input type=text placeholder="MM/YY"class="p-2 w-40 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="mmyy" name="mmyy">
+                    <input type=text placeholder="CVV"class="p-2 w-40 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="cvv" name="cvv">
+                </div>  
+            <div class="mb-8 block text-xl"> Billing Information</div> 
+                <div class="block m-4">
+                    <input type=text placeholder="Address"class="p-2 w-46 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="address" name="address">
+                    <input type=text placeholder="Apt #" class="p-2 w-16 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="apt#" name="apt#">    
+                </div>
+                
+
+                <div class="block m-4">
+                    <input type=text placeholder="Country" class="p-2 w-30 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="country" name="country">
+                    <input type=text placeholder="State"class="p-2 w-24 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="State" name="state">    
+                    <input type=text placeholder="Zip Code"class="p-2 w-36 border border-gray-400 shadow-xl focus:outline-none focus:ring-blue-500
+                        focus:border-blue-500" type="text" id="zip" name="zip"> </div>
+                </div>
+            <div class="mx-32 bg-gray-700 px-10 py-5 text-white">
+                <label class="block text-xl mb-6">Order Summary</label>
+                <div class="block mb-2"> Subtotal = $$$</div>
+                <div class="block mb-2"> Shipping = $$$</div>
+                <div class="block mb-2"> tax = $$$</div>
+                <div class="block mb-2"> Total= $$$</div>
+            </div>
+    </h1>
+    <h2 class=>
+        <div class="flex mx-auto w-1/2">
+            <button class="returnToCustomerInfo rounded-md my-16 text-white border-2 mt-4 px-4 py-2 rounded bg-black"> Return To Customer Information</button>
+            <button class="completeOrder rounded-md my-16 text-white border-2 mt-4 px-4 py-2 rounded bg-black"> Complete Order</button>
+        </div>
+    </h2>
+</body>
+</html>
