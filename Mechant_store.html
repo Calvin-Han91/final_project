@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Final</title>
+  <title>Ramon's Store</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
-  <!-- <div class="bg-gray-900 text-3xl text-yellow-500">Whiskey Time</div> -->
   <!-- Firebase UI CSS -->
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -26,8 +23,9 @@
     }
   </style>
 </head>
-
 <body class="bg-gray-100">
+
+
   <nav class="bg-gray-800">
     <div class="px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
@@ -44,8 +42,8 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center w-1/6">
-            <h1 class="block lg:hidden w-auto text-yellow-500">Whiskey Time</h1> <!-- mobile -->
-            <h2 class="hidden lg:block w-auto text-3xl text-yellow-500">Whiskey Time</h2>
+            <h1 class="block lg:hidden w-auto text-white">Ramon's</h1> <!-- mobile -->
+            <h2 class="hidden lg:block w-auto text-white">Ramon's Store</h2>
           </div>
           <div class="flex w-4/6">
             <form class="w-full">
@@ -85,7 +83,7 @@
       </div>
     </div>
   </nav>
-  <div class="sign-in-or-sign-out text-black text-right"></div>
+
   <div class="container mx-auto">
     <div id="image-slider" class="splide px-2">
       <div class="splide__track">
@@ -102,34 +100,58 @@
         </ul>
       </div>
     </div>
-  </div>
 
+    <div class="mah-h-10 mt-4 text-center">Featured Message</div>
 
-  <h1 class="text-center font-bold text-2xl m-4 text-black-500 uppercase">Find the perfect whiskey for you!!</h1>
-  
-  <div class="mainframe px-16 md:flex bg-gray-200"></div>
-
-  <div>
-    <form class="w-full mt-8">
-        <div class="block m-4"></div>
-            <input type="text" id="product-name" name="product-name" placeholder="Product Name" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-            <input type="text" id="product-type" name="product-type" placeholder="Product Type" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-      
-        <div class="block m-4"></div>
-            <input type="text" id="image-url" name="image-url" placeholder="Image URL" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
-        
-        <div class="block m-4"></div>
-            <input type="number" id="product-price" name="product-price" placeholder="Price" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">     
-    
-        <button class="listButton bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-xl">List</button>
-    </form>
+    <div class="row products p-3">
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+      <div class="col-3 card-wrapper">
+        <a href="#">
+          <div class="card text-center">Produto</div>
+        </a>
+      </div>
+    </div>
   </div>
 
   <footer class="pt-2 pb-2 bg-dark fixed-bottom">
     <div class="container-fluid">
       <div class="d-flex align-items-center justify-content-between small">
         <div class="col-6 text-muted">
-          Whiskey Time
+          Ramon's Store
         </div>
         <div class="col-6">
           <div class="float-right social-medias text-white">
@@ -147,33 +169,31 @@
       </div>
     </div>
   </footer>
+  
+
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
   <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
-  <!-- Firebase Auth -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+
+  <!-- FirebaseUI Auth -->
+  <!-- https://firebaseopensource.com/projects/firebase/firebaseui-web/ -->
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
 
   <script>
     // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyB0t5Np3sIhLMZxYOchAXa-kiPsXWQw4dw",
-      authDomain: "kiei-451-final-project-132c0.firebaseapp.com",
-      projectId: "kiei-451-final-project-132c0",
-      storageBucket: "kiei-451-final-project-132c0.appspot.com",
-      messagingSenderId: "528618092567",
-      appId: "1:528618092567:web:0a5f9a300bea592f458452"
-    } // replace
+    var firebaseConfig = {} // replace
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-  <script src="index.js"></script>
-  
+
   <script>
     let menu = $("#user-menu");
     $("#user-menu-button").on("click", function() {
@@ -194,7 +214,6 @@
       } ).mount();
     } );
   </script>
-
+  <script src="todo.js"></script>
 </body>
-
 </html>
