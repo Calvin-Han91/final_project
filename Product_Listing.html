@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+  <div class="bg-gray-900 text-3xl text-yellow-500">Whiskey Time</div>
+</head>
+
+<body class="bg-gray-100">
+
+    <div>
+        <form class="w-full mt-8">
+            <div class="block m-4"></div>
+                <input type="text" id="product-name" name="product-name" placeholder="Product Name" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+                <input type="text" id="product-type" name="product-type" placeholder="Product Type" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+          
+            <div class="block m-4"></div>
+                <input type="text" id="image-url" name="image-url" placeholder="Image URL" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+            
+            <div class="block m-4"></div>
+                <input type="number" id="product-price" name="product-price" placeholder="Price" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">     
+        
+            <button class="listButton bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-xl">List</button>
+        </form>
+        
+      </div>
+
+      <p class="m-4 text-center">Return to <a class="text-yellow-500 underline" href="index.html">home</a></p>
+
+      <!-- Put the Firebase config here -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+  <!-- Firebase Auth -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB0t5Np3sIhLMZxYOchAXa-kiPsXWQw4dw",
+      authDomain: "kiei-451-final-project-132c0.firebaseapp.com",
+      projectId: "kiei-451-final-project-132c0",
+      storageBucket: "kiei-451-final-project-132c0.appspot.com",
+      messagingSenderId: "528618092567",
+      appId: "1:528618092567:web:0a5f9a300bea592f458452"
+    } // replace
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="Product_Listing.js"></script>
+</body>
+</html>
