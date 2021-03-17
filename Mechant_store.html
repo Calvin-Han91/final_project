@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ramon's Store</title>
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+  <div class="bg-gray-900 text-3xl mx16 text-yellow-500">Whiskey Time</div>
   <!-- Firebase UI CSS -->
   <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -26,7 +27,7 @@
 <body class="bg-gray-100">
 
 
-  <nav class="bg-gray-800">
+  <nav class="bg-gray-900">
     <div class="px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -42,14 +43,10 @@
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
           <div class="flex-shrink-0 flex items-center w-1/6">
-            <h1 class="block lg:hidden w-auto text-white">Ramon's</h1> <!-- mobile -->
-            <h2 class="hidden lg:block w-auto text-white">Ramon's Store</h2>
+            <h2 class="block lg:hidden w-auto text-white">Ramon's</h2> <!-- mobile -->
+            <h4 class="hidden lg:block w-auto text-white">Ramon's Store</h4>
           </div>
           <div class="flex w-4/6">
-            <form class="w-full">
-              <input type="text" id="todo" name="todo" class="my-2 p-2 w-4/5 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500 rounded-xl">
-              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl w-1/6">Search</button>
-            </form>
           </div>
           <div class="flex w-1/5 items-center">
             <!-- Profile dropdown -->
@@ -60,7 +57,6 @@
     
               <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" id="user-menu" hidden>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
               </div>
   
               <button class="rounded-full text-white ml-5">
@@ -71,105 +67,68 @@
         </div>
       </div>
     </div>
-  
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-      </div>
-    </div>
-  </nav>
-
+    </nav>
   <div class="container mx-auto">
     <div id="image-slider" class="splide px-2">
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
-            <img src="image01.jpeg">
+            <img src="Merchant_banner_1.png">
           </li>
           <li class="splide__slide">
-            <img src="image02.jpeg">
-          </li>
-          <li class="splide__slide">
-            <img src="image03.jpeg">
+            <img src="Merchant_banner_2.jpg">
           </li>
         </ul>
       </div>
     </div>
 
-    <div class="mah-h-10 mt-4 text-center">Featured Message</div>
+    <div class="mah-h-10 mt-4 text-center">Welcome to Ramon's Store! Best Whisky store in Cook County!</div>
 
     <div class="row products p-3">
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 1</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 2</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 3</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 4</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 5</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 6</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 7</div>
         </a>
       </div>
       <div class="col-3 card-wrapper">
-        <a href="#">
-          <div class="card text-center">Produto</div>
+        <a href="Merchant_Product_Page.html">
+          <div class="card text-center">Product 8</div>
         </a>
       </div>
     </div>
   </div>
-
-  <footer class="pt-2 pb-2 bg-dark fixed-bottom">
-    <div class="container-fluid">
-      <div class="d-flex align-items-center justify-content-between small">
-        <div class="col-6 text-muted">
-          Ramon's Store
-        </div>
-        <div class="col-6">
-          <div class="float-right social-medias text-white">
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-twitter fa-lg"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
   
+  <p class="m-4 text-center">Return to <a class="text-yellow-500 underline" href="index.html">home</a></p>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>

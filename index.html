@@ -48,10 +48,6 @@
             <h2 class="hidden lg:block w-auto text-3xl text-yellow-500">Whiskey Time</h2>
           </div>
           <div class="flex w-4/6">
-            <form class="w-full">
-              <input type="text" id="todo" name="todo" class="my-2 p-2 w-4/5 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500 rounded-xl">
-              <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-xl w-1/6">Search</button>
-            </form>
           </div>
           <div class="flex w-1/5 items-center">
             <!-- Profile dropdown -->
@@ -62,7 +58,6 @@
     
               <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" id="user-menu" hidden>
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
-                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
               </div>
   
               <button class="rounded-full text-white ml-5">
@@ -73,17 +68,6 @@
         </div>
       </div>
     </div>
-  
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="sm:hidden" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
-      </div>
-    </div>
   </nav>
   <div class="sign-in-or-sign-out text-black text-right"></div>
   <div class="container mx-auto">
@@ -91,13 +75,10 @@
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
-            <img src="image01.jpeg">
+            <img src="Banner-1.jpg">
           </li>
           <li class="splide__slide">
-            <img src="image02.jpeg">
-          </li>
-          <li class="splide__slide">
-            <img src="image03.jpeg">
+            <img src="Banner-2.jpg">
           </li>
         </ul>
       </div>
@@ -105,8 +86,32 @@
   </div>
 
 
-  <h1 class="text-center font-bold text-2xl m-4 text-black-500 uppercase">Find the perfect whiskey for you!!</h1>
+  <h1 class="text-center font-bold text-2xl m-4 text-black-500 uppercase">WHISKY FOR EVERYONE</h1>
   
+    <div class="row">
+        <div class="item col-xs-12 col-sm-4">
+            <div class="item-content text-center">
+                <img class="center" alt="Gift Sets" src="https://www.findrarewhisky.com/media/wysiwyg/home/cat/home_cat_giftset.png">
+                <h5 class="name text-center">Gift Sets</h5>
+                <p class="des">Step up your gift game with our collection of whisky that will make your gift the favorite.</p>
+            </div>
+        </div>
+        <div class="item col-xs-12 col-sm-4">
+            <div class="item-content text-center">
+                <img class="center" alt="Rare Collection" src="https://www.findrarewhisky.com/media/wysiwyg/home/cat/home_cat_rare_collection.png">
+                <h5 class="name">Rare Collection</h5>
+                <p class="des">From fine to super-premium Whisky. Shop our collection to find the best bottle for you.</p>
+            </div>
+        </div>
+        <div class="item col-xs-12 col-sm-4">
+            <div class="text-center item-content">
+                <img alt="Brand Exclusive" src="https://www.findrarewhisky.com/media/wysiwyg/home/cat/home_cat_brand.png">
+                <h5 class="name">Brand Exclusive</h5>
+                <p class="des">Looking for a distinct taste or one of a kind bottle? Shop our brands and find what best suits you.</p>
+            </div>
+        </div>
+    </div>
+
   <div class="mainframe px-16 md:flex bg-gray-200"></div>
 
   <div>
@@ -125,28 +130,6 @@
     </form>
   </div>
 
-  <footer class="pt-2 pb-2 bg-dark fixed-bottom">
-    <div class="container-fluid">
-      <div class="d-flex align-items-center justify-content-between small">
-        <div class="col-6 text-muted">
-          Whiskey Time
-        </div>
-        <div class="col-6">
-          <div class="float-right social-medias text-white">
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-instagram fa-lg"></i>
-            </a>
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-facebook fa-lg"></i>
-            </a>
-            <a href="#" class="mr-2 ml-2 text-white">
-              <i class="fab fa-twitter fa-lg"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -194,7 +177,6 @@
       } ).mount();
     } );
   </script>
-
 </body>
 
 </html>
