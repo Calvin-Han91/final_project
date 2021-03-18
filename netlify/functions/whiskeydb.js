@@ -11,10 +11,10 @@ exports.handler = async function(event) {
     let whiskeys = querySnapshot.docs
     for (let i = 0; i < whiskeys.length; i++) {
       let whiskeyID = whiskeys[i].id 
-      let whiskey = todos[i].data()
+      let whiskey = whiskeys[i].data()
       console.log(whiskey)
   
-      todosData.push({
+      whiskeyData.push({
         id: whiskeyID,
         text: whiskey.text
       })
