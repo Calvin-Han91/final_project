@@ -48,8 +48,6 @@ firebase.auth().onAuthStateChanged(async function(user) {
     // Signed out
     console.log('signed out')
 
-    document.querySelector('form').classList.add('hidden')
-
     // Initializes FirebaseUI Auth
     let ui = new firebaseui.auth.AuthUI(firebase.auth())
 
