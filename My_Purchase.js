@@ -25,17 +25,12 @@ firebase.auth().onAuthStateChanged(async function(user) {
   
       async function renderPost(productId, productName, productType, productImageUrl, productPrice) {
         document.querySelector('.purchase').insertAdjacentHTML('beforeend', `
-          <div class="post-${productId} md:mt-16 mt-8 space-y-8">
-          <h2 class="my-8"> 
-            <div class="flex">
-            <img class="md:w-1/3 mx-8 " src="${productImageUrl}">
-            <div class= "Text-centered justify-around">    
-                <div class="mb-30 text-center font-bold text-2xl"> ${productName} - ${productType} - $${productPrice}</div>
+        <div class="card-wrapper">
+            <div class="card post-${productId}">
+              <img src="${productImageUrl}">
+              <div class="mb-30 text-center font-bold text-2xl"> ${productName} - ${productType} - $${productPrice}</div>
             </div>
-          </div>
-          </h2>
-        
-          </div>
+        </div>     
         `)
         
       }
