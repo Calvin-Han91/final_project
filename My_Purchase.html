@@ -1,45 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Purchases</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+    <!-- <div class="bg-gray-900 text-3xl text-yellow-500">Whiskey Time</div> -->
+    <!-- Firebase UI CSS -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <style>
+      .splide__slide img {
+        width: 100%;
+      }
+      .card {
+        min-height: 20vh;
+      }
+      .card-wrapper {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Purchase</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
-  <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.css" />
-  <div class="bg-gray-900 text-3xl text-yellow-500">Whiskey Time</div>
-</head>
+  <body class="bg-gray-100">
+    <nav class="bg-gray-900">
+      <div class="relative flex items-center justify-between h-16">
+        <div class="grid grid-cols-2 w-full">
+          <div class="text-left pl-2">
+            <h2 class="lg:block w-auto text-3xl text-yellow-500">Whiskey Time</h2>
+          </div>
+          <div class="text-right pr-2" style="align-self: center;">
+            <button type="button" class="rounded-full text-white ml-5" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <i class="fas fa-user text-white fa-lg"></i>
+            </button>
+  
+            <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" id="user-menu" hidden>
+              <a href="My_Purchase.html" class="block text-center py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
+            </div>
+  
+            <button class="rounded-full text-white ml-5">
+              <i class="fas fa-shopping-cart"></i> Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="sign-in-or-sign-out text-black text-right"></div>
 
-<body class="bg-gray-100">
-    <div class="mb-30 text-center font-bold text-3xl">My Purchases
-
+    <div class="container mx-auto px-36">
+      <div class="mb-30 text-center font-bold text-3xl">My Purchases</div>
+      <div class="purchase grid grid-cols-1 md:grid-cols-2 products p-3">
+      </div>  
     </div>
-    <div class="purchase"></div>
+      
 
     <p class="m-4 text-center">Return to <a class="text-yellow-500 underline" href="index.html">home</a></p>
 
-      <!-- Put the Firebase config here -->
+  <!-- Put the Firebase config here -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
   <!-- Firebase Auth -->
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.7.3/firebase-ui-auth.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyB0t5Np3sIhLMZxYOchAXa-kiPsXWQw4dw",
-      authDomain: "kiei-451-final-project-132c0.firebaseapp.com",
-      projectId: "kiei-451-final-project-132c0",
-      storageBucket: "kiei-451-final-project-132c0.appspot.com",
-      messagingSenderId: "528618092567",
-      appId: "1:528618092567:web:0a5f9a300bea592f458452"
-    } // replace
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-  <script src="My_Purchase.js"></script>
-</body>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyB0t5Np3sIhLMZxYOchAXa-kiPsXWQw4dw",
+        authDomain: "kiei-451-final-project-132c0.firebaseapp.com",
+        projectId: "kiei-451-final-project-132c0",
+        storageBucket: "kiei-451-final-project-132c0.appspot.com",
+        messagingSenderId: "528618092567",
+        appId: "1:528618092567:web:0a5f9a300bea592f458452"
+      } // replace
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="My_Purchase.js"></script>
+  </body>
 </html>

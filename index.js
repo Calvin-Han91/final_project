@@ -44,6 +44,11 @@ firebase.auth().onAuthStateChanged(async function(user) {
       document.location.href = 'Product_Listing.html'
     })
 
+    document.querySelector('.purchase').addEventListener('click', async function(event) {
+      event.preventDefault()
+      document.location.href = 'My_Purchase.html'
+    })
+
   } else {
     // Signed out
     console.log('signed out')
