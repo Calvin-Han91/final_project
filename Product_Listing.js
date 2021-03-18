@@ -21,7 +21,8 @@ firebase.auth().onAuthStateChanged(async function(user) {
         type: productType,
         imageUrl: productImageUrl, 
         price: productPrice,
-        created: firebase.firestore.FieldValue.serverTimestamp()
+        created: firebase.firestore.FieldValue.serverTimestamp(),
+        userID: user.uid
       })
       let productId = docRef.id // the newly created document's ID
       renderPost(productId, productName, productType, productImageUrl, productPrice)
