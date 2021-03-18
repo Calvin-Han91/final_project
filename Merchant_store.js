@@ -35,21 +35,19 @@ firebase.auth().onAuthStateChanged(async function(user) {
         })
 
       }
-  
       async function renderPost(productId, productName, productType, productImageUrl, productPrice) {
-        document.querySelector('.browse').insertAdjacentHTML('beforeend', `
-          <div class="post-${productId} md:mt-16 mt-8 space-y-8">
-          <h2 class="my-8"> 
-            <div class="flex">
-            <img class="md:w-1/3 mx-8 " src="${productImageUrl}">
-            <div class= "Text-centered justify-around">    
-                <div class="mb-30 text-center font-bold text-2xl"> ${productName} - ${productType} - $${productPrice}</div>
-                <button class="addToCartButton rounded-md mt-16 text-white border-2 mt-4 px-4 py-2 rounded bg-black"> Add To Cart</button>
-                <button class="wishlistButton rounded-md my-16 text-black border-2 mt-4 px-4 py-2 rounded bg-white-500"> Add To Wishlist</button>
+        document.querySelector('.browse').insertAdjacentHTML('beforeend', `  
+          <div class="card-wrapper">
+            <div class="card post-${productId}">
+              <img src="${productImageUrl}">
+              <div class="mb-30 text-center font-bold text-2xl"> ${productName} - ${productType} - $${productPrice}</div>
             </div>
-          </div>
-          </h2>
-        
+          </div>     
+          <div class="card-wrapper">   
+            <div class="py-36 text-center">
+              <button class="addToCartButton rounded-md mt-16 text-white border-2 mt-4 px-4 py-2 rounded bg-black"> Add To Cart</button>
+              <button class="wishlistButton rounded-md my-16 text-black border-2 mt-4 px-4 py-2 rounded bg-white-500"> Add To Wishlist</button>
+            </div>
           </div>
         `)
         
